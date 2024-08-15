@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pesan</title>
+  <link rel="icon" href="img/icon.png">
+  <link rel="stylesheet" href="s.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body class="container-fluid z-n1"  onload="tulis()">
+        <div class="row d-flex justify-content-center aos-init aos-animate" data-aos="fade-up" data-aos-duration="3000">
+          <div class="col-lg-5 col-md-6 col-12 text-center text-md-center mt-xs-5" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0%, 0px);">
+            <div class="container">
+                <div class="row">
+                  <div class=" col-xm-12 text-justify text-md-justify ahmad border border-3 border-black rounded bg-light" style="margin-top: 90px;" data-aos="fade-up" data-aos-duration="3000">
+                    <h3 style="text-align: center;font-weight: bold; padding-top: 10px;">Kestari <img src="img/icon.png" width="20px" alt=""></h3>
+                        <p id="lokasiTulisan"></p>
+                    </div>
+                    <div class="col-xm-12 mt-2">
+                        <button type="submit" class=" baton btn" style="background-color: #387F39;"><a style="color: black; text-decoration: none;" href="https://api.whatsapp.com/send/?phone=6285893953426"><img width="20px" style="margin-right: 10px;" src="img/whatsapp.png" alt="">Pesan Sekarang</a></button>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Audio -->
+              <audio autoplay loop>
+                    <source src="img/kudaki.mp3">
+              </audio>
+
+              <!-- Footer -->
+               <h5 class="text-white" style="bottom: 0px; position: absolute; text-align: center; font-weight: bold;">Made by ©WisnuIbnuu  </h5>
+
+               <!-- footer end -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+    <script>
+        var i =0;
+        var tulisan = "Setelah berbulan-bulan berjuang bersama, akhirnya kita tiba di penghujung perjalanan Raja Brawijaya 24. Dengan hati yang berat, saya ucapkan selamat tinggal kepada semua teman-teman seperjuangan. Setiap momen, tawa, dan perjuangan yang kita lalui bersama akan selalu terpatri di hati 💖.Terima kasih untuk kerja keras, dedikasi, dan semangat kalian. Meski sedih untuk berpisah, saya yakin kenangan ini akan selalu menghangatkan hati kita di masa depan. Sampai jumpa di kesempatan berikutnya! 💖 Yang terpilih untuk lanjut Open House Semangat yahh dan yng belum terpilih mungkin belum rezekinya :),Semangat semuaa, Mau pulang absen dulu ya dek yaaa, hehe."
+        var kecepatan = 200;//ms
+
+        function tulis(){
+            if(i < tulisan.length){
+                document.getElementById("lokasiTulisan").innerHTML +=  tulisan.charAt(i);
+                i++;
+                setTimeout(tulis, kecepatan);
+            }
+        }
+    </script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
